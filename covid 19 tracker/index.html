@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+    <title> Covid 19 Tracker </title>
+    <script src="https://unpkg.com/axios/dist/axios.min.js" defer></script>
+    <script src="js/script.js" defer></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+    <body>
+        <div class="container">
+            <div class="title"> COVID 19 TRACKER </div>
+            <div class="search-container">
+                <div class="search">
+                    <input class="country-input" type="text" placeholder="Search Country" onkeyup="searchCountry()">
+                </div>  
+            </div>
+            <div class="country-list-container">
+                <div class="country-info-container">
+                    <!-- <div class="country-info">
+                        <span class="name">Philippines</span>
+                        <img src="coronavirus.png">
+                    </div> -->
+                </div>
+            </div>
+        </div>
+        <div id="loading"> <img src="images/loading.gif" alt="loading"></div>
+        <div id="map"></div>
+        <script defer                                  
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBBB9dN5sUtpm_0lHegsTadbZav-fhmgWs&callback=initMap">
+        </script>
+    </body>
+</html>
